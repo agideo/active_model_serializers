@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'active_model/serializer/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'active_model_serializers'
+  spec.name          = 'agi_active_model_serializers'
   spec.version       = ActiveModel::Serializer::VERSION
   spec.platform      = Gem::Platform::RUBY
-  spec.authors       = ['Steve Klabnik']
-  spec.email         = ['steve@steveklabnik.com']
+  spec.authors       = ['Jim Jin']
+  spec.email         = ['jim.jin2006@gmail.com']
   spec.summary       = 'Conventions-based JSON generation for Rails.'
   spec.description   = 'ActiveModel::Serializers allows you to generate your JSON in an object-oriented and convention-driven manner.'
-  spec.homepage      = 'https://github.com/rails-api/active_model_serializers'
+  spec.homepage      = 'https://github.com/agideo/active_model_serializers'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
