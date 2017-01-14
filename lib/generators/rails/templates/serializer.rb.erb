@@ -3,7 +3,7 @@
 <%- if module_name.any? -%>
 module <%= class_name.split('::')[0..-2].join('::') %>
 <%- end -%>
-  class <%= class_name.split('::').last %>Serializer < BaseSerializer
+  class <%= class_name.split('::').last %>Serializer < ActiveModel::Serializer
     attributes <%= attributes_names.map(&:inspect).join(", ") %>
   <%- association_names.each do |attribute| -%>
     has_one :<%= attribute %>
